@@ -16,18 +16,14 @@ import Contact from "./components/Contact";
 import { Content } from "antd/es/layout/layout";
 import Sider from "antd/es/layout/Sider";
 import "./components/styles/styles.css";
-import ArticleOutlinedIcon from "@mui/icons-material/ArticleOutlined";
-import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import Icon from "@mdi/react";
-import {
-  mdiInformationOutline,
-  mdiSealVariant,
-  mdiAccountBoxOutline,
-} from "@mdi/js";
+import AttributionIcon from "@mui/icons-material/Attribution";
+import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
+import ArticleOutlinedIcon from "@mui/icons-material/ArticleOutlined";
+import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
+import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
 
 const App = () => {
-  const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -39,58 +35,64 @@ const App = () => {
         }}
       >
         <Sider
-          collapsible
-          collapsed={collapsed}
-          onCollapse={(value) => setCollapsed(value)}
+          width={80}
+          style={{
+            overflow: "auto",
+            height: "100vh",
+            position: "fixed",
+            left: 0,
+            top: 0,
+            bottom: 0,
+          }}
+          theme="light"
         >
           <div className="demo-logo-vertical" />
-          <Menu theme="dark" mode="inline">
-            <Menu.Item key="home">
+          <Menu mode="inline" defaultSelectedKeys={["home"]}>
+            <Menu.Item key="home" className="flex items-center">
               <Link to="/">
-                <HomeOutlinedIcon />
+                <HomeOutlinedIcon className="mr-2" />
+                {/* <span hidden={hidden}>Home</span> */}
               </Link>
             </Menu.Item>
-            <Menu.Item key="introduction">
+            <Menu.Item key="introduction" className="flex items-center">
               <Link to="/introduction">
-                <Icon path={mdiInformationOutline} size={1} />
+                <AttributionIcon className="mr-2 " />
+                {/* <span hidden={hidden}>About me</span> */}
               </Link>
             </Menu.Item>
             <Menu.Item key="education">
-              <Link to="/education">
-                <SchoolOutlinedIcon />
+              <Link to="/education" className="flex items-center">
+                <SchoolOutlinedIcon className="mr-2" />
+                {/* Education */}
               </Link>
             </Menu.Item>
             <Menu.Item key="projects">
-              <Link to="/project">
-                <ArticleOutlinedIcon />
+              <Link to="/project" className="flex items-center">
+                <ArticleOutlinedIcon className="mr-2" />
+                {/* Projects */}
               </Link>
             </Menu.Item>
             <Menu.Item key="award">
-              <Link to="/award">
-                <Icon path={mdiSealVariant} size={1} />
+              <Link to="/award" className="flex items-center">
+                <WorkspacePremiumIcon className="mr-2" />
+                {/* Awards */}
               </Link>
             </Menu.Item>
             <Menu.Item key="contact">
-              <Link to="/contact">
-                <Icon path={mdiAccountBoxOutline} size={1} />
+              <Link to="/contact" className="flex items-center">
+                <PhoneEnabledIcon className="mr-2" />
+                {/* Contact */}
               </Link>
             </Menu.Item>
           </Menu>
         </Sider>
-        <Layout className="site-layout bg-white h-screen">
+        <Layout className="site-layout ml-20">
           <Content
             style={{
               overflow: "initial",
             }}
           >
-            <div
-              style={{
-                padding: 24,
-                minHeight: 360,
-                background: colorBgContainer,
-              }}
-              className="h-screen"
-            >
+            <div className="h-screen">
               <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route path="/introduction" element={<Introduction />} />
