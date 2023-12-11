@@ -4,3 +4,36 @@
 
 @tailwind utilities;
 
+.bg-gradient-to-r{
+    background: linear-gradient(to right, #000000, #303030);
+}
+
+.img-home img{
+    height: 37rem;
+}
+
+.img-aboutme img{
+    height: 18rem;
+}
+
+.home-portfolio{
+    width: 48%;
+}
+
+.home-portfolio p{
+    letter-spacing: 0.6rem;
+}
+
+.ngkhanhtrinh{
+    font-size: 5rem;
+    line-height: 5.5rem;
+}
+
+.fe-dev{
+    font-size: 1.5rem;
+    letter-spacing: 0.6rem;
+}
+
+.education-footer{
+    width: 94.666667%;
+}
