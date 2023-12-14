@@ -4,36 +4,129 @@
 
 @tailwind utilities;
 
-.bg-gradient-to-r{
-    background: linear-gradient(to right, #000000, #303030);
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #000000, #303030);
 }
 
-.img-home img{
-    height: 37rem;
+.bg-gradient-to-l {
+  background: linear-gradient(to right, #303030, #000000);
 }
 
-.img-aboutme img{
-    height: 18rem;
+.box-top-left {
+  border: 1.5px solid #333d29;
+  background-color: #d1d3d4;
+  top: -5px;
+  left: -5px;
 }
 
-.home-portfolio{
-    width: 48%;
+.box-top-center {
+  border: 1.5px solid #333d29;
+  background-color: #d1d3d4;
+  top: -5px;
+  left: 50%;
 }
 
-.home-portfolio p{
-    letter-spacing: 0.6rem;
+.box-top-right {
+  border: 1.5px solid #333d29;
+  background-color: #d1d3d4;
+  top: -5px;
+  right: -5px;
 }
 
-.ngkhanhtrinh{
-    font-size: 5rem;
-    line-height: 5.5rem;
+.box-bottom-left {
+  border: 1.5px solid #333d29;
+  background-color: #d1d3d4;
+  bottom: -5px;
+  left: -5px;
 }
 
-.fe-dev{
-    font-size: 1.5rem;
-    letter-spacing: 0.6rem;
+.box-bottom-center {
+  border: 1.5px solid #333d29;
+  background-color: #d1d3d4;
+  bottom: -5px;
+  left: 50%;
 }
 
-.education-footer{
-    width: 94.666667%;
+.box-bottom-right {
+  border: 1.5px solid #333d29;
+  background-color: #d1d3d4;
+  bottom: -5px;
+  right: -5px;
+}
+
+.img-verticle {
+  width: 300px;
+}
+
+.img-verticle img {
+  height: 37rem;
+}
+
+.img-aboutme img {
+  height: 18rem;
+}
+
+.home-portfolio {
+  width: 48%;
+}
+
+.home-portfolio p {
+  letter-spacing: 0.6rem;
+}
+
+.ngkhanhtrinh {
+  font-size: 5rem;
+  line-height: 5.5rem;
+}
+
+.fe-dev {
+  font-size: 1.5rem;
+  letter-spacing: 0.6rem;
+}
+
+.image-project {
+  height: 400px;
+}
+
+/* @media screen and (min-width: 1536px) {
+  .image-pettsitter {
+    height: 600px;
+  }
+  .image-parent:hover {
+    height: 600px;
+  }
+} */
+
+.visit-website {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
+.image-parent {
+  position: relative;
+}
+
+.image-parent:hover .overlay {
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.image-parent:hover p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 80%;
 }

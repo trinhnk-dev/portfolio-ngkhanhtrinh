@@ -5,8 +5,8 @@ import { Animated } from "react-animated-css";
 
 const Education = () => {
   return (
-    <div className="bg-gradient-to-r h-screen flex flex-col justify-between items-center">
-      <div className="w-full flex justify-around items-start h-60">
+    <div className="bg-gradient-to-r h-screen flex flex-col justify-start items-center">
+      <div className="w-4/5 flex justify-between items-start h-60">
         <div className="flex justify-between w-20 h-64">
           <div className="border-r-2 bg-white w-px"></div>
           <div className="border-r-2 bg-white w-px"></div>
@@ -14,19 +14,19 @@ const Education = () => {
           <div className="border-r-2 bg-white w-px"></div>
           <div className="border-r-2 bg-white w-px"></div>
         </div>
-        <div className="text-white flex justify-end items-center w-1/2 text-3xl mt-10">
+        <div className="text-white flex justify-end items-center w-1/2 text-3xl mt-20">
           PAGE 02
-          <IoSchoolOutline className="ml-5 " />
+          <IoSchoolOutline className="ml-5 text-5xl" />
         </div>
       </div>
-      <div className="education-footer flex justify-center h-1/2 pb-20">
-        <div className="w-1/3 text-white text-left ml-2">
+      <div className="flex justify-between items-center h-full w-4/5">
+        <div className="w-1/3 text-white text-left">
           <Animated
             animationIn="fadeIn"
             isVisible={true}
             animationInDuration={1200}
           >
-            <h3 className="text-5xl font-bold mb-5">EDUCATION</h3>
+            <h3 className="text-6xl font-bold mb-5">EDUCATION</h3>
           </Animated>
           <Animated
             className="mb-4"
@@ -61,7 +61,7 @@ const Education = () => {
               animationInDelay={1000}
             >
               <p className="font-light text-lg">
-                Foundation Front-end Developer
+                Professional Front-end Developer
               </p>
             </Animated>
           </Animated>
@@ -75,7 +75,7 @@ const Education = () => {
           <img
             src={ImgEducation}
             alt="img-home"
-            className="rounded-full w-full object-cover"
+            className="rounded-full w-6/7 object-cover"
           />
         </Animated>
       </div>

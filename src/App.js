@@ -24,9 +24,7 @@ import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
 
 const App = () => {
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
+
   return (
     <Router>
       <Layout

@@ -1,28 +1,27 @@
 import React from "react";
-import { BsSearchHeart } from "react-icons/bs";
+import { GrSteps } from "react-icons/gr";
 import ImgAboutMe from "../../image/aboutme-img.jpg";
 import { Animated } from "react-animated-css";
 
-
 const Introduction = () => {
   return (
-    <div className="bg-gradient-to-r h-screen flex flex-col justify-between items-center">
-      <div className="w-full flex justify-around items-start h-60">
-        <div className="text-white flex justify-start items-center w-1/2 text-3xl mt-10">
-          <BsSearchHeart className="mr-5 " />
+    <div className="flex h-screen flex-col items-center justify-between bg-gradient-to-l">
+      <div className="h-60 flex w-4/5 items-start justify-between">
+        <div className="mt-20 flex w-1/2 items-center justify-start text-3xl text-white">
+          <GrSteps className="mr-5 text-5xl" />
           PAGE 01
         </div>
-        <div className="flex justify-between w-20 h-64">
-          <div className="border-r-2 bg-white w-px"></div>
-          <div className="border-r-2 bg-white w-px"></div>
-          <div className="border-r-2 bg-white w-px"></div>
-          <div className="border-r-2 bg-white w-px"></div>
-          <div className="border-r-2 bg-white w-px"></div>
+        <div className="flex h-64 w-20 justify-between">
+          <div className="w-px border-r-2 bg-white"></div>
+          <div className="w-px border-r-2 bg-white"></div>
+          <div className="w-px border-r-2 bg-white"></div>
+          <div className="w-px border-r-2 bg-white"></div>
+          <div className="w-px border-r-2 bg-white"></div>
         </div>
       </div>
-      <div className="w-5/6 flex justify-center h-1/2 pb-20">
+      <div className="flex h-full w-4/5 items-center justify-between">
         <Animated
-          className="img-aboutme w-3/5"
+          className="img-aboutme w-3/5 "
           animationIn="zoomIn"
           isVisible={true}
           animationInDuration={1500}
@@ -30,17 +29,17 @@ const Introduction = () => {
           <img
             src={ImgAboutMe}
             alt="img-home"
-            className="rounded-full w-full object-cover"
+            className="w-6/7 rounded-full object-cover "
           />
         </Animated>
 
-        <div className="w-2/6 text-white text-right ml-2">
+        <div className="ml-2 w-2/6 text-right text-white">
           <Animated
             animationIn="fadeIn"
             isVisible={true}
             animationInDuration={1500}
           >
-            <h3 className="text-5xl font-bold mb-5">ABOUT ME</h3>
+            <p className="mb-2 text-6xl font-bold">ABOUT ME</p>
           </Animated>
           <Animated
             animationIn="fadeIn"
@@ -49,10 +48,11 @@ const Introduction = () => {
             animationInDelay={500}
           >
             <p className="text-lg">
-              I am a Front-end Developer, I have been passionate about art and
-              color since I was young, so I decided to follow the path of
-              becoming a professional Front-end Developer. My strengths are
-              color coordination, reasonable layout design and rich imagination.
+              Graduated from FPT University majoring in Software Engineering,
+              currently looking for a challenging position in a large
+              organization as a Front-end Developer. The short-term goal in the
+              future will be to reach Junior/Middle position and long-term
+              position will be Senior Front-end Developer within 4 years.
             </p>
           </Animated>
         </div>

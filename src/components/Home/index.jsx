@@ -12,7 +12,7 @@ const Home = () => {
           isVisible={true}
           animationInDuration={1500}
         >
-          <div className="text-black p-3 bg-white rounded-lg text-center  ">
+          <div className="text-black p-3 bg-white rounded-lg text-center relative">
             <Animated
               animationIn="fadeIn"
               isVisible={true}
@@ -20,6 +20,12 @@ const Home = () => {
             >
               <p className="text-2xl font-extrabold">PORTFOLIO</p>
             </Animated>
+            <div className="w-3 h-3 absolute box-top-left bg-gray-400 z-10"></div>
+            <div className="w-3 h-3 absolute box-top-center bg-gray-400 z-10"></div>
+            <div className="w-3 h-3 absolute box-top-right bg-gray-400 z-10"></div>
+            <div className="w-3 h-3 absolute box-bottom-left bg-gray-400 z-10"></div>
+            <div className="w-3 h-3 absolute box-bottom-center bg-gray-400 z-10"></div>
+            <div className="w-3 h-3 absolute box-bottom-right bg-gray-400 z-10"></div>
           </div>
         </Animated>
         <Animated
@@ -50,21 +56,21 @@ const Home = () => {
         isVisible={true}
         animationInDuration={1200}
       >
-        <div className="absolute top-0 flex justify-between w-20 h-20">
+        <div className="absolute top-0 flex justify-between w-20 h-48">
           <div className="border-r-2 bg-white w-px"></div>
           <div className="border-r-2 bg-white w-px"></div>
           <div className="border-r-2 bg-white w-px"></div>
           <div className="border-r-2 bg-white w-px"></div>
           <div className="border-r-2 bg-white w-px"></div>
         </div>
-        <div className="img-home w-1/2 z-10">
+        <div className="img-verticle z-10">
           <img
             src={ImgHome}
             alt="img-home"
             className="rounded-full object-cover"
           />
         </div>
-        <div className="absolute bottom-0 flex justify-between w-20 h-20">
+        <div className="absolute bottom-0 flex justify-between w-20 h-48">
           <div className="border-r-2 bg-white w-px"></div>
           <div className="border-r-2 bg-white w-px"></div>
           <div className="border-r-2 bg-white w-px"></div>
