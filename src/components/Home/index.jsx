@@ -4,8 +4,8 @@ import { Animated } from "react-animated-css";
 
 const Home = () => {
   return (
-    <div className="flex h-screen justify-center bg-gradient-to-r">
-      <div className="flex w-5/12 flex-col items-start justify-center">
+    <div className="flex h-screen sm:flex-col-reverse lg:flex-row sm:items-center justify-center bg-gradient-to-r">
+      <div className="flex flex-col items-start justify-center md:w-6/12 2xl:w-5/12">
         <Animated
           className="home-portfolio"
           animationIn="fadeIn"
