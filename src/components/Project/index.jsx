@@ -57,6 +57,7 @@ const Project = () => {
               src={ImgPetSitter}
               alt="pet sitter"
               style={{ height: "100%" }}
+              loading="lazy"
             />
             <div className="overlay"></div>
             <p className="visit-website text-semibold text-xl">
