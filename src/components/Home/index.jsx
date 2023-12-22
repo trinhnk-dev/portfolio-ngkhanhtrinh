@@ -4,28 +4,22 @@ import { Animated } from "react-animated-css";
 
 const Home = () => {
   return (
-    <div className="bg-gradient-to-r h-screen flex justify-center">
-      <div className="w-5/12 flex flex-col justify-center items-start">
+    <div className="flex h-screen justify-center bg-gradient-to-r">
+      <div className="flex w-5/12 flex-col items-start justify-center">
         <Animated
           className="home-portfolio"
           animationIn="fadeIn"
           isVisible={true}
           animationInDuration={1500}
         >
-          <div className="text-black p-3 bg-white rounded-lg text-center relative">
-            <Animated
-              animationIn="fadeIn"
-              isVisible={true}
-              animationInDuration={1500}
-            >
-              <p className="text-2xl font-extrabold">PORTFOLIO</p>
-            </Animated>
-            <div className="w-3 h-3 absolute box-top-left bg-gray-400 z-10"></div>
-            <div className="w-3 h-3 absolute box-top-center bg-gray-400 z-10"></div>
-            <div className="w-3 h-3 absolute box-top-right bg-gray-400 z-10"></div>
-            <div className="w-3 h-3 absolute box-bottom-left bg-gray-400 z-10"></div>
-            <div className="w-3 h-3 absolute box-bottom-center bg-gray-400 z-10"></div>
-            <div className="w-3 h-3 absolute box-bottom-right bg-gray-400 z-10"></div>
+          <div className="relative rounded-lg bg-white p-3 text-center text-black">
+            <p className="text-2xl font-extrabold">PORTFOLIO</p>
+            <div className="box-top-left absolute z-10 h-3 w-3 bg-gray-400"></div>
+            <div className="box-top-center absolute z-10 h-3 w-3 bg-gray-400"></div>
+            <div className="box-top-right absolute z-10 h-3 w-3 bg-gray-400"></div>
+            <div className="box-bottom-left absolute z-10 h-3 w-3 bg-gray-400"></div>
+            <div className="box-bottom-center absolute z-10 h-3 w-3 bg-gray-400"></div>
+            <div className="box-bottom-right absolute z-10 h-3 w-3 bg-gray-400"></div>
           </div>
         </Animated>
         <Animated
@@ -33,35 +27,35 @@ const Home = () => {
           isVisible={true}
           animationInDuration={1500}
           animationInDelay={500}
+          className="ngkhanhtrinh text-left text-white"
         >
-          <div className="text-white text-left ngkhanhtrinh">
-            <p className="font-black mt-8 animate__fadeInLeft">
-              NGUYỄN <br /> KHÁNH TRÌNH
-            </p>
-          </div>
+          <p className="animate__fadeInLeft mt-8 font-black">
+            NGUYỄN <br /> KHÁNH TRÌNH
+          </p>
         </Animated>
         <Animated
           animationIn="fadeInLeft"
           isVisible={true}
           animationInDuration={1000}
           animationInDelay={800}
+          className="fe-dev text-left text-white"
         >
-          <div className="text-white text-left fe-dev">FRONT-END DEVELOPER</div>
+          FRONT-END DEVELOPER
         </Animated>
       </div>
 
       <Animated
-        className="w-5/12 flex justify-center items-center relative h-screen"
+        className="relative flex h-screen w-5/12 items-center justify-center"
         animationIn="fadeIn"
         isVisible={true}
         animationInDuration={1200}
       >
-        <div className="absolute top-0 flex justify-between w-20 h-48">
-          <div className="border-r-2 bg-white w-px"></div>
-          <div className="border-r-2 bg-white w-px"></div>
-          <div className="border-r-2 bg-white w-px"></div>
-          <div className="border-r-2 bg-white w-px"></div>
-          <div className="border-r-2 bg-white w-px"></div>
+        <div className="absolute top-0 flex h-48 w-20 justify-between">
+          <div className="w-px border-r-2 bg-white"></div>
+          <div className="w-px border-r-2 bg-white"></div>
+          <div className="w-px border-r-2 bg-white"></div>
+          <div className="w-px border-r-2 bg-white"></div>
+          <div className="w-px border-r-2 bg-white"></div>
         </div>
         <div className="img-verticle z-10">
           <img
@@ -70,17 +64,17 @@ const Home = () => {
             className="rounded-full object-cover"
           />
         </div>
-        <div className="absolute bottom-0 flex justify-between w-20 h-48">
-          <div className="border-r-2 bg-white w-px"></div>
-          <div className="border-r-2 bg-white w-px"></div>
-          <div className="border-r-2 bg-white w-px"></div>
-          <div className="border-r-2 bg-white w-px"></div>
-          <div className="border-r-2 bg-white w-px"></div>
+        <div className="absolute bottom-0 flex h-48 w-20 justify-between">
+          <div className="w-px border-r-2 bg-white"></div>
+          <div className="w-px border-r-2 bg-white"></div>
+          <div className="w-px border-r-2 bg-white"></div>
+          <div className="w-px border-r-2 bg-white"></div>
+          <div className="w-px border-r-2 bg-white"></div>
         </div>
-        <div className="absolute right-0 flex flex-col justify-between items-end w-20 h-20">
-          <div className="border-2 border-white w-5 h-5 rounded-full"></div>
-          <div className="border-2 border-white w-5 h-5 rounded-full mt-2 mb-2"></div>
-          <div className="border-2 border-white w-5 h-5 rounded-full"></div>
+        <div className="absolute right-0 flex h-20 w-20 flex-col items-end justify-between">
+          <div className="h-5 w-5 rounded-full border-2 border-white"></div>
+          <div className="mb-2 mt-2 h-5 w-5 rounded-full border-2 border-white"></div>
+          <div className="h-5 w-5 rounded-full border-2 border-white"></div>
         </div>
       </Animated>
     </div>

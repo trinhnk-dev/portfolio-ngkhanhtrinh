@@ -48,11 +48,11 @@ const Introduction = () => {
             animationInDelay={500}
           >
             <p className="text-lg">
-              Graduated from FPT University majoring in Software Engineering,
-              currently looking for a challenging position in a large
-              organization as a Front-end Developer. The short-term goal in the
-              future will be to reach Junior/Middle position and long-term
-              position will be Senior Front-end Developer within 4 years.
+              I am a front-end developer with a passion for leadership. Strong
+              creativity, layout and analysis capabilities. Team player with an
+              eye for detail. With a background of playing musical instruments
+              for 7 years, I believe my mission is to combine and express art
+              through code.
             </p>
           </Animated>
         </div>

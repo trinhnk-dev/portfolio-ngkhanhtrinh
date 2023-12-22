@@ -83,7 +83,7 @@ const Project = () => {
               <img
                 src={ImgSomoTask}
                 alt="ImgSomoTask"
-                className="w-full rounded-r-lg"
+                className="w-full rounded-tr-lg"
                 style={{ height: "100%" }}
               />
               <div className="overlay"></div>
@@ -137,7 +137,7 @@ const Project = () => {
                 <img
                   src={ImgToadTrade}
                   alt="ImgToadTrade"
-                  className="h-full w-full rounded-r-lg"
+                  className="h-full w-full rounded-br-lg"
                   style={{ height: "100%" }}
                 />
                 <div className="overlay"></div>

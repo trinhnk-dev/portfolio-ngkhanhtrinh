@@ -5,28 +5,28 @@ import { Animated } from "react-animated-css";
 
 const Education = () => {
   return (
-    <div className="bg-gradient-to-r h-screen flex flex-col justify-start items-center">
-      <div className="w-4/5 flex justify-between items-start h-60">
-        <div className="flex justify-between w-20 h-64">
-          <div className="border-r-2 bg-white w-px"></div>
-          <div className="border-r-2 bg-white w-px"></div>
-          <div className="border-r-2 bg-white w-px"></div>
-          <div className="border-r-2 bg-white w-px"></div>
-          <div className="border-r-2 bg-white w-px"></div>
+    <div className="flex h-screen flex-col items-center justify-start bg-gradient-to-r">
+      <div className="h-60 flex w-4/5 items-start justify-between">
+        <div className="flex h-64 w-20 justify-between">
+          <div className="w-px border-r-2 bg-white"></div>
+          <div className="w-px border-r-2 bg-white"></div>
+          <div className="w-px border-r-2 bg-white"></div>
+          <div className="w-px border-r-2 bg-white"></div>
+          <div className="w-px border-r-2 bg-white"></div>
         </div>
-        <div className="text-white flex justify-end items-center w-1/2 text-3xl mt-20">
+        <div className="mt-20 flex w-1/2 items-center justify-end text-3xl text-white">
           PAGE 02
           <IoSchoolOutline className="ml-5 text-5xl" />
         </div>
       </div>
-      <div className="flex justify-between items-center h-full w-4/5">
-        <div className="w-1/3 text-white text-left">
+      <div className="flex h-full w-4/5 items-center justify-between">
+        <div className="w-1/3 text-left text-white">
           <Animated
             animationIn="fadeIn"
             isVisible={true}
             animationInDuration={1200}
           >
-            <h3 className="text-6xl font-bold mb-5">EDUCATION</h3>
+            <h3 className="mb-5 text-6xl font-bold">EDUCATION</h3>
           </Animated>
           <Animated
             className="mb-4"
@@ -35,15 +35,15 @@ const Education = () => {
             animationInDuration={1500}
             animationInDelay={500}
           >
-            <h6 className="font-semibold text-xl">2019 - 2023</h6>
-            <h6 className="font-semibold text-xl">FPT University HCMC</h6>
+            <h6 className="text-xl font-semibold">2019 - 2023</h6>
+            <h6 className="text-xl font-semibold">FPT University HCMC</h6>
             <Animated
               animationIn="fadeInLeft"
               isVisible={true}
               animationInDuration={1500}
               animationInDelay={1000}
             >
-              <p className="font-light text-lg">Software Engineering</p>
+              <p className="text-lg font-light">Software Engineering</p>
             </Animated>
           </Animated>
           <Animated
@@ -52,15 +52,15 @@ const Education = () => {
             animationInDuration={2000}
             animationInDelay={800}
           >
-            <h6 className="font-semibold text-xl">Apr 2022 - Oct 2022</h6>
-            <h6 className="font-semibold text-xl">Cybersoft Academy HCMC</h6>
+            <h6 className="text-xl font-semibold">Apr 2022 - Oct 2022</h6>
+            <h6 className="text-xl font-semibold">Cybersoft Academy HCMC</h6>
             <Animated
               animationIn="fadeInLeft"
               isVisible={true}
               animationInDuration={1500}
               animationInDelay={1000}
             >
-              <p className="font-light text-lg">
+              <p className="text-lg font-light">
                 Professional Front-end Developer
               </p>
             </Animated>
@@ -75,7 +75,7 @@ const Education = () => {
           <img
             src={ImgEducation}
             alt="img-home"
-            className="rounded-full w-6/7 object-cover"
+            className="w-6/7 rounded-full object-cover"
           />
         </Animated>
       </div>
