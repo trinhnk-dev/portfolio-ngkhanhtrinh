@@ -54,7 +54,7 @@ const Project = () => {
           >
             <img
               className="rounded-l-lg"
-              src="https://drive.google.com/uc?id=1jHqOaLdPMjDPrVcEzWghHXfRsKWXprLO"
+              src={ImgPetSitter}
               alt="pet sitter"
               style={{ height: "100%" }}
             />
