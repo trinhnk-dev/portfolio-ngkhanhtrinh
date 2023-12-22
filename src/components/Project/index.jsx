@@ -86,6 +86,7 @@ const Project = () => {
                 alt="ImgSomoTask"
                 className="w-full rounded-tr-lg"
                 style={{ height: "100%" }}
+                loading="lazy"
               />
               <div className="overlay"></div>
               <p className="visit-website text-semibold text-xl">
@@ -115,6 +116,7 @@ const Project = () => {
                   alt="ImgSomoCreate"
                   className="h-full w-full"
                   style={{ height: "100%" }}
+                  loading="lazy"
                 />
                 <div className="overlay"></div>
                 <p className="visit-website text-semibold text-xl">
@@ -140,6 +142,7 @@ const Project = () => {
                   alt="ImgToadTrade"
                   className="h-full w-full rounded-br-lg"
                   style={{ height: "100%" }}
+                  loading="lazy"
                 />
                 <div className="overlay"></div>
                 <p className="visit-website text-semibold text-xl">

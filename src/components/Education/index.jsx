@@ -76,6 +76,7 @@ const Education = () => {
             src={ImgEducation}
             alt="img-home"
             className="w-6/7 rounded-full object-cover"
+            loading="lazy"
           />
         </Animated>
       </div>

@@ -22,6 +22,7 @@ const Award = () => {
             src={ImgAward}
             alt="img-home"
             className="rounded-full object-cover"
+            loading="lazy"
           />
         </div>
       </Animated>

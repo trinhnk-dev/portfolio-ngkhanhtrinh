@@ -62,6 +62,7 @@ const Home = () => {
             src={ImgHome}
             alt="img-home"
             className="rounded-full object-cover"
+            loading="lazy"
           />
         </div>
         <div className="absolute bottom-0 flex h-48 w-20 justify-between">
