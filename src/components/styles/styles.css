@@ -4,12 +4,20 @@
 
 @tailwind utilities;
 
-.bg-gradient-to-r {
-  background: linear-gradient(to right, #000000, #303030);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.bg-gradient-to-l {
-  background: linear-gradient(to right, #303030, #000000);
+.container{
+  width: 1200px;
+  margin: auto;
+}
+
+.background-gray{
+  background-color: #f9f9f9;
 }
 
 .box-top-left {
@@ -82,6 +90,7 @@
 .fe-dev {
   font-size: 1.5rem;
   letter-spacing: 0.6rem;
+  font-weight: 600;
 }
 
 .image-project {

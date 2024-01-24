@@ -10,81 +10,52 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 
 const Project = () => {
   return (
-    <div className="flex h-screen flex-col items-center justify-between bg-gradient-to-l">
-      <div
-        className="flex w-4/5 items-start justify-between"
-        style={{ height: "25%" }}
-      >
-        <div className="mt-20 flex w-2/3 items-center justify-start text-3xl text-white">
-          <GoProjectRoadmap className="mr-5 text-5xl" />
-          PAGE 03
-          <Animated
-            className="mb-5 text-6xl font-bold text-white"
-            animationIn="fadeIn"
-            isVisible={true}
-            animationInDuration={1500}
-          >
-            <h3 className="ml-10 text-6xl font-bold text-white">MY PROJECTS</h3>
-          </Animated>
-        </div>
-        <div className="flex h-40 w-20 justify-between">
-          <div className="w-px border-r-2 bg-white"></div>
-          <div className="w-px border-r-2 bg-white"></div>
-          <div className="w-px border-r-2 bg-white"></div>
-          <div className="w-px border-r-2 bg-white"></div>
-          <div className="w-px border-r-2 bg-white"></div>
-        </div>
-      </div>
-      <div
-        className="flex w-4/5 items-start justify-end"
-        style={{ height: "74% " }}
-      >
-        <Animated
-          className="mr-1 flex w-1/3 justify-end"
-          animationIn="fadeInRight"
-          isVisible={true}
-          animationInDuration={1500}
-          style={{ height: "100%" }}
-        >
-          <Link
-            to="https://pettsitter.vercel.app/"
-            target="_blank"
-            className="image-parent"
-            style={{ height: "90%" }}
-          >
-            <img
-              className="rounded-l-lg"
-              src={ImgPetSitter}
-              alt="pet sitter"
-              style={{ height: "100%" }}
-              loading="lazy"
-            />
-            <div className="overlay"></div>
-            <p className="visit-website text-semibold text-xl">
-              Visit Website
-              <HiOutlineExternalLink className="ml-2" />
-            </p>
-          </Link>
-        </Animated>
+    <div className="container" id="project">
+      <div className="flex h-screen flex-col items-center justify-between ">
         <div
-          className="flex w-1/2 flex-col justify-between"
-          style={{ height: "90%" }}
+          style={{ height: "25%" }}
+        >
+          {/* <div className="mt-20 flex w-2/3 items-center justify-start text-3xl text-white">
+            <GoProjectRoadmap className="mr-5 text-5xl" />
+            PAGE 03
+            <Animated
+              className="mb-5 text-6xl font-bold text-white"
+              animationIn="fadeIn"
+              isVisible={true}
+              animationInDuration={1500}
+            >
+            </Animated>
+          </div> */}
+              <h3 className="ml-10 text-6xl font-bold text-center">MY PROJECTS</h3>
+          {/* <div className="flex h-40 w-20 justify-between">
+            <div className="w-px border-r-2 bg-white"></div>
+            <div className="w-px border-r-2 bg-white"></div>
+            <div className="w-px border-r-2 bg-white"></div>
+            <div className="w-px border-r-2 bg-white"></div>
+            <div className="w-px border-r-2 bg-white"></div>
+          </div> */}
+        </div>
+        <div
+          className="flex w-4/5 items-start justify-end"
+          style={{ height: "74% " }}
         >
           <Animated
-            animationIn="fadeInDown"
+            className="mr-1 flex w-1/3 justify-end"
+            animationIn="fadeInRight"
             isVisible={true}
             animationInDuration={1500}
-            style={{ height: "60%" }}
+            style={{ height: "100%" }}
           >
             <Link
-              to="https://github.com/Capston-FPT-Somo-Farm-Task-Management/FE-Somo"
+              to="https://pettsitter.vercel.app/"
               target="_blank"
               className="image-parent"
+              style={{ height: "90%" }}
             >
               <img
-                src={ImgSomoTask}
-                alt="ImgSomoTask"
-                className="w-full rounded-tr-lg"
+                className="rounded-l-lg"
+                src={ImgPetSitter}
+                alt="pet sitter"
                 style={{ height: "100%" }}
                 loading="lazy"
               />
@@ -95,16 +66,15 @@ const Project = () => {
               </p>
             </Link>
           </Animated>
-
           <div
-            className="flex flex-row justify-between"
-            style={{ height: "39.5%" }}
+            className="flex w-1/2 flex-col justify-between"
+            style={{ height: "90%" }}
           >
             <Animated
-              animationIn="tada"
+              animationIn="fadeInDown"
               isVisible={true}
               animationInDuration={1500}
-              style={{ width: "49.5%" }}
+              style={{ height: "60%" }}
             >
               <Link
                 to="https://github.com/Capston-FPT-Somo-Farm-Task-Management/FE-Somo"
@@ -112,9 +82,9 @@ const Project = () => {
                 className="image-parent"
               >
                 <img
-                  src={ImgSomoCreate}
-                  alt="ImgSomoCreate"
-                  className="h-full w-full"
+                  src={ImgSomoTask}
+                  alt="ImgSomoTask"
+                  className="w-full rounded-tr-lg"
                   style={{ height: "100%" }}
                   loading="lazy"
                 />
@@ -125,32 +95,63 @@ const Project = () => {
                 </p>
               </Link>
             </Animated>
-
-            <Animated
-              animationIn="fadeInLeft"
-              isVisible={true}
-              animationInDuration={1500}
-              style={{ width: "50%" }}
+  
+            <div
+              className="flex flex-row justify-between"
+              style={{ height: "39.5%" }}
             >
-              <Link
-                to="https://toadtrade.vercel.app/home"
-                target="_blank"
-                className="image-parent"
+              <Animated
+                animationIn="tada"
+                isVisible={true}
+                animationInDuration={1500}
+                style={{ width: "49.5%" }}
               >
-                <img
-                  src={ImgToadTrade}
-                  alt="ImgToadTrade"
-                  className="h-full w-full rounded-br-lg"
-                  style={{ height: "100%" }}
-                  loading="lazy"
-                />
-                <div className="overlay"></div>
-                <p className="visit-website text-semibold text-xl">
-                  Visit Website
-                  <HiOutlineExternalLink className="ml-2" />
-                </p>
-              </Link>
-            </Animated>
+                <Link
+                  to="https://github.com/Capston-FPT-Somo-Farm-Task-Management/FE-Somo"
+                  target="_blank"
+                  className="image-parent"
+                >
+                  <img
+                    src={ImgSomoCreate}
+                    alt="ImgSomoCreate"
+                    className="h-full w-full"
+                    style={{ height: "100%" }}
+                    loading="lazy"
+                  />
+                  <div className="overlay"></div>
+                  <p className="visit-website text-semibold text-xl">
+                    Visit Website
+                    <HiOutlineExternalLink className="ml-2" />
+                  </p>
+                </Link>
+              </Animated>
+  
+              <Animated
+                animationIn="fadeInLeft"
+                isVisible={true}
+                animationInDuration={1500}
+                style={{ width: "50%" }}
+              >
+                <Link
+                  to="https://toadtrade.vercel.app/home"
+                  target="_blank"
+                  className="image-parent"
+                >
+                  <img
+                    src={ImgToadTrade}
+                    alt="ImgToadTrade"
+                    className="h-full w-full rounded-br-lg"
+                    style={{ height: "100%" }}
+                    loading="lazy"
+                  />
+                  <div className="overlay"></div>
+                  <p className="visit-website text-semibold text-xl">
+                    Visit Website
+                    <HiOutlineExternalLink className="ml-2" />
+                  </p>
+                </Link>
+              </Animated>
+            </div>
           </div>
         </div>
       </div>
