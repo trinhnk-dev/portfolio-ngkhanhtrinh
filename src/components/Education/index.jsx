@@ -1,7 +1,4 @@
 import React from "react";
-import { IoSchoolOutline } from "react-icons/io5";
-import ImgEducation from "../../image/education-img.jpg";
-import { Animated } from "react-animated-css";
 import EducationLottie from "../../education.json";
 import AnimateEducation from "../../animate-education.json";
 import Lottie from "react-lottie";
@@ -24,8 +21,8 @@ const Education = () => {
     },
   };
   return (
-    <div className="background-gray" id="education">
-      <div className="container relative py-24">
+    <section className="background-gray" id="education">
+      <div className="container relative py-12">
         <Lottie
           options={animateEducation}
           height={280}
@@ -34,7 +31,9 @@ const Education = () => {
             borderRadius: "15px",
             margin: 0,
             position: "absolute",
-            top: "0",
+            bottom: "0",
+            right: 10,
+            zIndex: 10
           }}
         />
         <div className="flex items-center justify-between">
@@ -46,7 +45,7 @@ const Education = () => {
             <p className="text-lg font-light">
               Bachelor's degree in Software Engineering
             </p>
-            <h6 className="text-xl font-semibold mt-6">Apr 2022 - Oct 2022</h6>
+            <h6 className="mt-6 text-xl font-semibold">Apr 2022 - Oct 2022</h6>
             <h6 className="text-xl font-semibold">Cybersoft Academy HCMC</h6>
             <p className="text-lg font-light">Front-end Web Foundation</p>
           </div>
@@ -58,7 +57,7 @@ const Education = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

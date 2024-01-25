@@ -1,5 +1,4 @@
 import React from "react";
-import { Animated } from "react-animated-css";
 
 const Home = () => {
   return (
