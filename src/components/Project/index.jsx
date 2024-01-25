@@ -15,25 +15,9 @@ const Project = () => {
         <div
           style={{ height: "25%" }}
         >
-          {/* <div className="mt-20 flex w-2/3 items-center justify-start text-3xl text-white">
-            <GoProjectRoadmap className="mr-5 text-5xl" />
-            PAGE 03
-            <Animated
-              className="mb-5 text-6xl font-bold text-white"
-              animationIn="fadeIn"
-              isVisible={true}
-              animationInDuration={1500}
-            >
-            </Animated>
-          </div> */}
+          
               <h3 className="ml-10 text-6xl font-bold text-center">MY PROJECTS</h3>
-          {/* <div className="flex h-40 w-20 justify-between">
-            <div className="w-px border-r-2 bg-white"></div>
-            <div className="w-px border-r-2 bg-white"></div>
-            <div className="w-px border-r-2 bg-white"></div>
-            <div className="w-px border-r-2 bg-white"></div>
-            <div className="w-px border-r-2 bg-white"></div>
-          </div> */}
+          
         </div>
         <div
           className="flex w-4/5 items-start justify-end"

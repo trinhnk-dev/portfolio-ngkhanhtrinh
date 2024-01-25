@@ -2,26 +2,23 @@ import React from "react";
 import { IoSchoolOutline } from "react-icons/io5";
 import ImgEducation from "../../image/education-img.jpg";
 import { Animated } from "react-animated-css";
+import EducationLottie from "../../education.json";
+import Lottie from "react-lottie";
 
 const Education = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: EducationLottie,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <div className="background-gray" id="education">
-      <div className="py-32 container">
-        {/* <div className="h-60 flex w-4/5 items-start justify-between">
-          <div className="flex h-64 w-20 justify-between">
-            <div className="w-px border-r-2 bg-white"></div>
-            <div className="w-px border-r-2 bg-white"></div>
-            <div className="w-px border-r-2 bg-white"></div>
-            <div className="w-px border-r-2 bg-white"></div>
-            <div className="w-px border-r-2 bg-white"></div>
-          </div>
-          <div className="mt-20 flex w-1/2 items-center justify-end text-3xl">
-            PAGE 02
-            <IoSchoolOutline className="ml-5 text-5xl" />
-          </div>
-        </div> */}
+      <div className="container py-32">
         <div className="flex items-center justify-between">
-          <div className="w-1/3 text-left">
+          <div className="w-2/3 text-left">
             <Animated
               animationIn="fadeIn"
               isVisible={true}
@@ -44,7 +41,9 @@ const Education = () => {
                 animationInDuration={1500}
                 animationInDelay={1000}
               >
-                <p className="text-lg font-light">Bachelor's degree in Software Engineering</p>
+                <p className="text-lg font-light">
+                  Bachelor's degree in Software Engineering
+                </p>
               </Animated>
             </Animated>
             <Animated
@@ -61,25 +60,16 @@ const Education = () => {
                 animationInDuration={1500}
                 animationInDelay={1000}
               >
-                <p className="text-lg font-light">
-                  Front-end Web Foundation
-                </p>
+                <p className="text-lg font-light">Front-end Web Foundation</p>
               </Animated>
             </Animated>
           </div>
-          <Animated
-            className="img-aboutme w-2/4"
-            animationIn="fadeInDown"
-            isVisible={true}
-            animationInDuration={2000}
-          >
-            <img
-              src={ImgEducation}
-              alt="img-home"
-              className="w-6/7 rounded-full object-cover"
-              loading="lazy"
-            />
-          </Animated>
+          <Lottie
+            options={defaultOptions}
+            height={400}
+            width={400}
+            style={{ borderRadius: "15px", margin: 0 }}
+          />
         </div>
       </div>
     </div>
