@@ -1,28 +1,28 @@
 import React from "react";
 import { Animated } from "react-animated-css";
 import { Link } from "react-router-dom";
+import Lottie from "react-lottie";
+import ContactAnimate from "../../contact.json"
 
 const Contact = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: ContactAnimate,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <div className="background-gray" id="contact">
-      <div className="flex py-24 justify-around container">
+      <div className="flex py-5 justify-around items-center container">
         <div className="flex flex-col justify-center">
-          {/* <div className=" flex w-20 justify-between" style={{ height: "350px" }}>
-            <div className="w-px border-r-2 bg-white"></div>
-            <div className="w-px border-r-2 bg-white"></div>
-            <div className="w-px border-r-2 bg-white"></div>
-            <div className="w-px border-r-2 bg-white"></div>
-            <div className="w-px border-r-2 bg-white"></div>
-          </div> */}
           <div className="mt-10">
-            <Animated
+            <h1
               className="mb-5 text-6xl font-bold "
-              animationIn="fadeIn"
-              isVisible={true}
-              animationInDuration={1500}
             >
               CONTACT ME
-            </Animated>
+            </h1>
             <div className="flex flex-wrap justify-start">
               <Animated
                 className="mb-1 w-1/6 text-lg font-semibold "
@@ -130,11 +130,12 @@ const Contact = () => {
           </div>
         </div>
   
-        <div className=" flex w-1/3 flex-col items-end justify-center">
-          <div className="h-5 w-5 rounded-full border-2 border-black"></div>
-          <div className="mb-2 mt-2 h-5 w-5 rounded-full border-2 border-black"></div>
-          <div className="h-5 w-5 rounded-full border-2 border-black"></div>
-        </div>
+        <Lottie
+            options={defaultOptions}
+            height={250}
+            width={500}
+            style={{ borderRadius: "15px", margin: 0 }}
+          />
       </div>
     </div>
   );

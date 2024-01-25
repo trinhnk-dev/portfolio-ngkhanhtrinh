@@ -16,7 +16,7 @@ const Introduction = () => {
   };
   return (
     <div className="container" id="about">
-      <div className=" py-32">
+      <div className=" py-24">
         <div className="flex justify-between items-center">
           <div className="w-2/5">
             <Lottie
