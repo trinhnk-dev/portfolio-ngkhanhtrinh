@@ -12,7 +12,7 @@
 }
 
 .container {
-  width: 930px;
+  max-width: 930px;
   margin: auto;
 }
 
@@ -97,12 +97,16 @@
 }
 
 .ngkhanhtrinh {
-  font-size: 4rem;
   line-height: 5.5rem;
+}
+@media screen and (max-width: 640px) {
+  .ngkhanhtrinh{
+  line-height: 3.5rem;
+
+  }
 }
 
 .fe-dev {
-  font-size: 1.5rem;
   letter-spacing: 0.6rem;
   font-weight: 600;
 }
