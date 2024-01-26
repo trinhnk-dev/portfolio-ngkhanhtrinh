@@ -19,7 +19,7 @@ const Contact = () => {
     <section className="background-gray py-12" id="contact">
       <div className="container flex flex-col-reverse items-center md:flex-row md:justify-around lg:justify-between">
         <div className="md:w-2/5 sm:w-2/3 w-full sm:block flex flex-col items-center">
-            <h1 className="mb-5 text-6xl font-bold md:text-left text-center">CONTACT</h1>
+            <h1 className="mb-5 sm:text-6xl text-3xl font-bold md:text-left text-center">CONTACT</h1>
             <div className="flex w-2/3 sm:w-full flex-col flex-wrap justify-start sm:mb-0 mb-3">
               <div className="flex md:justify-around justify-center">
                 <h2 className="mb-1 w-1/3 text-lg font-semibold ">Phone</h2>
@@ -34,7 +34,7 @@ const Contact = () => {
                 <h3 className="w-2/3 text-lg ">Ho Chi Minh City, VietNam</h3>
               </div>
             </div>
-            <div className="flex text-3xl font-bold lg:justify-start justify-center">
+            <div className="flex text-3xl font-bold sm:justify-center md:justify-start justify-center">
               <Link
                 to="https://github.com/trinhnk-dev"
                 className="mr-3 hover:text-blue-500 duration-200"

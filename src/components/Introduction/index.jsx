@@ -12,7 +12,7 @@ const Introduction = () => {
     },
   };
   return (
-    <section className="container py-12" id="about">
+    <section className="container py-20" id="about">
       <div className="flex lg:flex-row flex-col items-center lg:justify-between">
         <div className="sm:w-2/5 w-4/5 lg:mb-0 mb-2">
           <Lottie

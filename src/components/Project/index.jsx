@@ -7,8 +7,8 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const Project = () => {
   return (
-    <section className="container py-12 relative" id="project">
-      <h1 className="mb-2 text-center text-6xl font-bold">PROJECTS</h1>
+    <section className="container py-20 relative" id="project">
+      <h1 className="mb-2 text-center sm:text-6xl text-3xl font-bold">PROJECTS</h1>
       <div className="flex lg:flex-row flex-col items-center lg:justify-between border-b-2 px-5 py-12">
         <div className="lg:w-3/5 w-11/12 rounded-md border-2 p-1 z-10 lg:mb-0 mb-5">
           <img src={ImgSomoTask} alt="" />

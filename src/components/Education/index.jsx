@@ -14,7 +14,7 @@ const Education = () => {
   };
   return (
     <section className="background-gray" id="education">
-      <div className="container relative py-12">
+      <div className="container relative py-20">
         <div className="flex flex-col-reverse items-center lg:flex-row lg:justify-between">
           <div className="z-20 w-2/3 text-center lg:text-left">
             <h3 className="mb-5 sm:text-6xl text-3xl font-bold">EDUCATION</h3>

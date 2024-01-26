@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <section className="background-gray mt-16 pb-16" id="home">
+    <section className="background-gray mt-20 pb-16" id="home">
       <div className="container py-20">
         <div className="flex justify-between flex-col-reverse items-center lg:flex-row lg:mb-20 mb-10">
           <div className="2xl:w-5/12 flex flex-col justify-around w-full items-center lg:w-7/12 lg:items-start">
@@ -13,7 +13,7 @@ const Home = () => {
               </p>
             </div>
 
-            <p className="text-lg w-11/12 lg:w-full lg:text-left sm:text-center">
+            <p className="text-lg w-11/12 lg:w-full lg:text-left text-center">
               Hi, I'm Nguyễn Khánh Trình. A passionate Front-end Developer{" "}
               living in Ho Chi Minh City, VietNam. 📍
             </p>
