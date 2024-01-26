@@ -16,26 +16,25 @@ const Contact = () => {
     },
   };
   return (
-    <section className="background-gray py-5" id="contact">
-      <div className="container flex sm:flex-col-reverse sm:items-center md:flex-row md:justify-between">
-        <div className="mt-10 w-2/5 text-center sm:text-left">
-          <div>
-            <h1 className="mb-5 text-6xl font-bold ">CONTACT</h1>
-            <div className="flex flex-col flex-wrap justify-start">
-              <div className="flex justify-around">
-                <h3 className="mb-1 w-1/3 text-lg font-semibold ">Phone</h3>
-                <h3 className="w-2/3 text-lg ">0325.262.564</h3>
+    <section className="background-gray py-12" id="contact">
+      <div className="container flex flex-col-reverse items-center md:flex-row md:justify-around lg:justify-between">
+        <div className="md:w-2/5 sm:w-2/3 w-full sm:block flex flex-col items-center">
+            <h1 className="mb-5 text-6xl font-bold md:text-left text-center">CONTACT</h1>
+            <div className="flex w-2/3 sm:w-full flex-col flex-wrap justify-start sm:mb-0 mb-3">
+              <div className="flex md:justify-around justify-center">
+                <h2 className="mb-1 w-1/3 text-lg font-semibold ">Phone</h2>
+                <h3 className="w-2/3  text-lg ">0325.262.564</h3>
               </div>
               <div className="flex justify-around">
-                <h3 className="mb-1 w-1/3 text-lg font-semibold ">Email</h3>
+                <h2 className="mb-1 w-1/3 text-lg font-semibold ">Email</h2>
                 <h3 className="w-2/3 text-lg ">khtrinh.work@gmail.com</h3>
               </div>
               <div className="flex justify-around">
-                <h3 className="mb-1 w-1/3 text-lg font-semibold ">Address</h3>
-                <h3 className="w-2/3 text-lg ">Ho Chi Minh City, Viet Nam</h3>
+                <h2 className="mb-1 w-1/3 text-lg font-semibold ">Address</h2>
+                <h3 className="w-2/3 text-lg ">Ho Chi Minh City, VietNam</h3>
               </div>
             </div>
-            <div className="flex text-3xl font-bold">
+            <div className="flex text-3xl font-bold lg:justify-start justify-center">
               <Link
                 to="https://github.com/trinhnk-dev"
                 className="mr-3 hover:text-blue-500 duration-200"
@@ -51,7 +50,6 @@ const Contact = () => {
                 <TbBrandLinkedin />
               </Link>
             </div>
-          </div>
         </div>
 
         <Lottie

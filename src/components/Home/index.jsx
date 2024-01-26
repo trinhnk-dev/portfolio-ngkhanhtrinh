@@ -13,7 +13,7 @@ const Home = () => {
               </p>
             </div>
 
-            <p className="text-lg w-9/12 lg:w-full lg:text-left sm:text-center">
+            <p className="text-lg w-11/12 lg:w-full lg:text-left sm:text-center">
               Hi, I'm Nguyễn Khánh Trình. A passionate Front-end Developer{" "}
               living in Ho Chi Minh City, VietNam. 📍
             </p>

@@ -23,7 +23,7 @@ const Introduction = () => {
           />
         </div>
 
-        <div className="ml-5 lg:w-3/5 w-9/12 lg:text-left text-center">
+        <div className="lg:ml-5 ml-0 lg:w-3/5 w-9/12 lg:text-left text-center">
           <p className="mb-2 sm:text-6xl text-3xl font-bold">ABOUT ME</p>
           <p className="text-lg">
             Hey, my name is Nguyễn Khánh Trình, and I'm a Frontend Developer. My
