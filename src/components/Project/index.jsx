@@ -93,7 +93,7 @@ const Project = () => {
             target="_blank"
             className="duration-200 hover:opacity-75"
           >
-            <img src={ImgPetSitter} alt="" className="rounded-sm" />
+            <img src={ImgPetSitter} alt="" className="rounded-md" />
           </Link>
         </div>
         <div className="lg:w-1/3 w-9/12 text-center">
