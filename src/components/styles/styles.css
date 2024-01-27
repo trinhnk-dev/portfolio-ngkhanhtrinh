@@ -109,6 +109,8 @@
 .fe-dev {
   letter-spacing: 0.6rem;
   font-weight: 600;
+  text-indent: -0.6rem;
+  direction:rtl;
 }
 
 .image-project {
