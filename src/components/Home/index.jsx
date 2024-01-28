@@ -1,3 +1,4 @@
+import { Tooltip } from "antd";
 import React from "react";
 
 const Home = () => {
@@ -25,20 +26,27 @@ const Home = () => {
             Tech Stack
           </h1>
           <div className="flex w-3/5 lg:w-3/4 sm:justify-between justify-center lg:ml-0 ml-2 gap-1 flex-wrap sm:flex-no-wrap">
-            <img
+          <Tooltip title="HTML, CSS" placement="bottom" >
+          <img
               src="https://skillicons.dev/icons?i=html,css"
               alt="html,css"
               className="hover:translate-y-12"
             />
-            <img src="https://skillicons.dev/icons?i=js,redux" alt="js,redux" />
-            <img
-              src="https://skillicons.dev/icons?i=react,next"
-              alt="reactjs,nextjs"
-            />
-            <img
-              src="https://skillicons.dev/icons?i=tailwind,scss"
-              alt="tailwind,scss"
-            />
+        </Tooltip>
+            
+            <Tooltip title="JavaScript, Redux" placement="bottom"><img src="https://skillicons.dev/icons?i=js,redux" alt="js,redux" /></Tooltip>
+            <Tooltip title="ReactJS, NextJS" placement="bottom">
+              <img
+                src="https://skillicons.dev/icons?i=react,next"
+                alt="reactjs,nextjs"
+              />
+            </Tooltip>
+            <Tooltip title="Tailwind, Sass" placement="bottom">
+              <img
+                src="https://skillicons.dev/icons?i=tailwind,scss"
+                alt="tailwind,scss"
+              />
+            </Tooltip>
           </div>
         </div>
       </div>

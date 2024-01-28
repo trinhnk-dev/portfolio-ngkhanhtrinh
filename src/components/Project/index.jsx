@@ -26,7 +26,7 @@ const Project = () => {
             <img
               src="https://skillicons.dev/icons?i=react,redux,scss"
               alt=""
-              className="lg:w-1/2 w-1/4"
+              className="lg:w-1/2 sm:w-1/4 w-1/3"
             />
           </div>
           <Link
@@ -106,7 +106,7 @@ const Project = () => {
             <img
               src="https://skillicons.dev/icons?i=html,css,js"
               alt=""
-              className="lg:w-1/2 w-1/4"
+              className="lg:w-1/2 sm:w-1/4 w-1/3"
             />
           </div>
           <div className="flex justify-center">
