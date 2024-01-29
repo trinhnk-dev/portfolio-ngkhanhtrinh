@@ -31,7 +31,7 @@ const Contact = () => {
               </div>
               <div className="flex justify-around">
                 <h2 className="mb-1 w-1/3 text-lg font-semibold ">Address</h2>
-                <h3 className="w-2/3 text-lg ">Ho Chi Minh City, VietNam</h3>
+                <h3 className="w-2/3 text-lg ">Ho Chi Minh City, Vietnam</h3>
               </div>
             </div>
             <div className="flex text-3xl font-bold sm:justify-center md:justify-start justify-center">
