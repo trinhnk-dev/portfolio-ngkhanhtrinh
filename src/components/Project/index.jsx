@@ -4,30 +4,30 @@ import ImgPetSitter from "../../image/pettsitter-project.png";
 import ImgToadTrade from "../../image/toadtrade-project.png";
 import { Link } from "react-router-dom";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { Image } from "antd";
 
 const Project = () => {
   return (
-    <section className="container py-20 relative" id="project">
-      <h1 className="text-center sm:text-6xl text-3xl font-bold">PROJECTS</h1>
-      <h3 className="mb-2 text-center sm:text-2xl text-xl font-medium">(Featured project)</h3>
-      <div className="flex lg:flex-row flex-col items-center lg:justify-between border-b-2 px-5 py-12">
-        <div className="lg:w-3/5 w-11/12 rounded-md border-2 p-1 z-10 lg:mb-0 mb-5">
-          <img src={ImgSomoTask} alt="" />
+    <section className="container relative py-20" id="project">
+      <h1 className="text-center text-3xl font-bold sm:text-6xl">PROJECTS</h1>
+      <h3 className="mb-2 text-center text-xl font-medium sm:text-2xl">
+        (Featured project)
+      </h3>
+      <div className="flex flex-col items-center border-b-2 px-5 py-12 lg:flex-row lg:justify-between">
+        <div className="z-10 mb-5 w-11/12 rounded-md border-2 p-1 lg:mb-0 lg:w-3/5">
+          <Image src={ImgSomoTask} alt="" />
         </div>
-        <div className="lg:w-1/3 w-9/12 text-center">
-          <h3 className="text-xl font-bold">
-            Somo Task Management System
-          </h3>
-          <p className="lg:my-4 my-6">
-            Web application for Somo farm
-            Cuu Long, helps managers manage assigned work through reports from
-            supervisor.{" "}
+        <div className="w-9/12 text-center lg:w-1/3">
+          <h3 className="text-xl font-bold">Somo Task Management System</h3>
+          <p className="my-6 lg:my-4">
+            Web application for Somo farm Cuu Long, helps managers manage
+            assigned work through reports from supervisor.{" "}
           </p>
           <div className="mb-10 flex items-center justify-center">
             <img
               src="https://skillicons.dev/icons?i=react,redux,scss"
               alt=""
-              className="lg:w-1/2 sm:w-1/4 w-1/3"
+              className="w-1/3 sm:w-1/4 lg:w-1/2"
             />
           </div>
           <Link
@@ -42,10 +42,10 @@ const Project = () => {
           </Link>
         </div>
       </div>
-      <div className="flex lg:flex-row flex-col-reverse items-center lg:justify-between border-b-2 px-5 py-12">
-        <div className="lg:w-1/3 w-9/12 text-center lg:mt-0 mt-5">
+      <div className="flex flex-col-reverse items-center border-b-2 px-5 py-12 lg:flex-row lg:justify-between">
+        <div className="mt-5 w-9/12 text-center lg:mt-0 lg:w-1/3">
           <h3 className="text-xl font-bold">ToadTrade Platform</h3>
-          <p className="lg:my-4 my-6 ">
+          <p className="my-6 lg:my-4 ">
             Web app helps students exchange, buy and sell school supplies,
             uniforms,... at a university scale. This startup project ranked in
             the top 5 out of 40 groups invited to the board for startup
@@ -68,7 +68,7 @@ const Project = () => {
             <Link
               to="https://toadtrade.vercel.app/home"
               target="_blank"
-              className="flex ml-2 items-center justify-center duration-200 hover:text-blue-500"
+              className="ml-2 flex items-center justify-center duration-200 hover:text-blue-500"
             >
               <span className="mr-1 font-semibold">Live Demo</span>
               <span className="text-xl">
@@ -77,7 +77,7 @@ const Project = () => {
             </Link>
           </div>
         </div>
-        <div className="lg:w-3/5 w-11/12 p-1">
+        <div className="w-11/12 p-1 lg:w-3/5">
           <Link
             to="https://toadtrade.vercel.app/home"
             target="_blank"
@@ -87,8 +87,8 @@ const Project = () => {
           </Link>
         </div>
       </div>
-      <div className="flex lg:flex-row flex-col items-center lg:justify-between px-5 py-12">
-        <div className="lg:w-3/5 w-11/12 p-1 z-10 lg:mb-0 mb-5">
+      <div className="flex flex-col items-center px-5 py-12 lg:flex-row lg:justify-between">
+        <div className="z-10 mb-5 w-11/12 p-1 lg:mb-0 lg:w-3/5">
           <Link
             to="https://pettsitter.vercel.app/"
             target="_blank"
@@ -97,9 +97,9 @@ const Project = () => {
             <img src={ImgPetSitter} alt="" className="rounded-md" />
           </Link>
         </div>
-        <div className="lg:w-1/3 w-9/12 text-center">
+        <div className="w-9/12 text-center lg:w-1/3">
           <h3 className="text-xl font-bold">Pet Sitter Website</h3>
-          <p className="lg:my-4 my-6 ">
+          <p className="my-6 lg:my-4 ">
             A web application that helps people who have lost pets post their
             pet searches and people who find lost pets can also post here.
           </p>
@@ -107,7 +107,7 @@ const Project = () => {
             <img
               src="https://skillicons.dev/icons?i=html,css,js"
               alt=""
-              className="lg:w-1/2 sm:w-1/4 w-1/3"
+              className="w-1/3 sm:w-1/4 lg:w-1/2"
             />
           </div>
           <div className="flex justify-center">
@@ -124,7 +124,7 @@ const Project = () => {
             <Link
               to="https://pettsitter.vercel.app/"
               target="_blank"
-              className="flex ml-2 items-center justify-center duration-200 hover:text-blue-500"
+              className="ml-2 flex items-center justify-center duration-200 hover:text-blue-500"
             >
               <span className="mr-1 font-semibold">Live Demo</span>
               <span className="text-xl">

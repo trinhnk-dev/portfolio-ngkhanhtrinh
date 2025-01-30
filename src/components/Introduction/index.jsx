@@ -12,9 +12,9 @@ const Introduction = () => {
     },
   };
   return (
-    <section className="container py-20" id="about">
-      <div className="flex lg:flex-row flex-col items-center lg:justify-between">
-        <div className="sm:w-2/5 w-4/5 lg:mb-0 mb-2">
+    <section className="background-gray py-20" id="about">
+      <div className="container flex flex-col items-center lg:flex-row lg:justify-between">
+        <div className="mb-2 w-4/5 sm:w-2/5 lg:mb-0">
           <Lottie
             options={defaultOptions}
             height={300}
@@ -23,8 +23,8 @@ const Introduction = () => {
           />
         </div>
 
-        <div className="lg:ml-5 ml-0 lg:w-3/5 w-9/12 lg:text-left text-center">
-          <p className="mb-2 sm:text-6xl text-3xl font-bold">ABOUT ME</p>
+        <div className="ml-0 w-9/12 text-center lg:ml-5 lg:w-3/5 lg:text-left">
+          <p className="mb-2 text-3xl font-bold sm:text-6xl">ABOUT ME</p>
           <p className="text-lg">
             Hey, my name is Nguyễn Khánh Trình, and I'm a Frontend Developer. My
             passion is to create and develop a clean UI/UX for my users.

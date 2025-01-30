@@ -30,6 +30,26 @@
   width: 20rem;
 }
 
+@media screen and (min-width: 820px) {
+  .tech-stack {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .tech-stack-title {
+    margin-bottom: 0;
+    border-bottom: 0;
+    border-right-width: 2px;
+    padding-right: 5px;
+  }
+
+  .tech-skills {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
 .background-gray {
   background-color: #fbfbfb;
 }
@@ -100,9 +120,8 @@
   line-height: 5.5rem;
 }
 @media screen and (max-width: 640px) {
-  .ngkhanhtrinh{
-  line-height: 3.5rem;
-
+  .ngkhanhtrinh {
+    line-height: 3.5rem;
   }
 }
 
@@ -110,7 +129,7 @@
   letter-spacing: 0.6rem;
   font-weight: 600;
   text-indent: -0.6rem;
-  direction:rtl;
+  direction: rtl;
 }
 
 .image-project {
@@ -161,13 +180,13 @@
 }
 
 @keyframes morph {
-  0%{
+  0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
-  50%{
+  50% {
     border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
   }
-  100%{
+  100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
