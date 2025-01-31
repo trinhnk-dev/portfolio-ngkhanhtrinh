@@ -30,7 +30,7 @@ const Introduction = () => {
             passion is to create and develop a clean UI/UX for my users.
             <br />
             <br />
-            My main stack currently is ReactJS/NextJS in combination with
+            My main stack currently is ReactJS/TypeScript in combination with
             SCSS/Tailwind CSS and Ant Design.
           </p>
         </div>
