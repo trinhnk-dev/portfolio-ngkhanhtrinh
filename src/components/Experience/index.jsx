@@ -3,7 +3,7 @@ import SamsungImage from "../../image/samsung.png";
 
 const Experiences = () => {
   return (
-    <section id="education">
+    <section id="experience">
       <div className="container relative py-20">
         <h3 className="mb-12 text-center text-3xl font-bold sm:text-6xl">
           EXPERIENCES

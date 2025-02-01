@@ -21,6 +21,12 @@ const Header = () => {
           About
         </a>
         <a
+          href="#experience"
+          className="text-lg font-medium duration-200 hover:text-blue-500"
+        >
+          Experiences
+        </a>
+        <a
           href="#education"
           className="text-lg font-medium duration-200 hover:text-blue-500"
         >
