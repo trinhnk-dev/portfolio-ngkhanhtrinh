@@ -7,7 +7,7 @@ const Header = () => {
         <h1 className="text-xl font-bold ">KhanhTrinh.dev</h1>
       </a>
 
-      <div className="hidden justify-around lg:flex lg:w-1/2  xl:w-1/3">
+      <div className="hidden justify-around lg:flex lg:w-1/2  xl:w-2/5">
         <a
           href="#home"
           className="text-lg font-medium duration-200 hover:text-blue-500"
