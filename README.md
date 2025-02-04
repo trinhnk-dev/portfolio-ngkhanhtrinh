@@ -71,8 +71,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Deploy with Firebase
 
-1. run firebase logout -> logout and clear token
-2. firebase login
-3. npm install -g firebase-tools
-4. firebase use -> check the project used
-5. firebase deploy
+1. firebase logout -> logout and clear token (optional)
+2. firebase login (optional)
+3. npm run build
+4. npm install -g firebase-tools
+5. firebase use -> check the project used
+6. firebase deploy
